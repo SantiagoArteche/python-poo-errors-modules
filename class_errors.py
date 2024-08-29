@@ -7,11 +7,11 @@ class Person:
     def printPerson(self, newParameter = 'SelfAssigned'):
         print(f"First name: {self.__name} \nSurname: {self.__surname} \nAge: {self.age}\n{self.country}\n{newParameter}")
 
-    def factorial(self, n):
+    def factorialPerson(self, n):
         if(n == 0): 
             return 1
         
-        return n * self.factorial(n - 1)
+        return n * self.factorialPerson(n - 1)
 
 person1 = Person('Santiago', 'Arteche', 25)
 person1.newProperty = 'This is a new property'
