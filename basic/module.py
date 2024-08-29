@@ -1,4 +1,4 @@
-from class_errors import Person
+from basic.class_errors import Person
 from math import factorial
 
 person = Person('Santiago', 'Arteche', 25, 'Bra')
