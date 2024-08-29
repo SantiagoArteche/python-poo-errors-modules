@@ -1,10 +1,17 @@
-import os
+import json
 
-my_file = open('intermediate/hola.txt', 'r+')
-print(my_file.read())
-my_file.write('\nNew line')
+json_file = open('intermediate/new_file.json', 'r+')
 
-my_file.close()
+json_test = {
+    "name": "Santiago",
+    "surname": "Arteche",
+    "age": 25
+}
+
+json.dump(json_test, json_file, indent = 2)
 
 
-os.remove('intermediate/hola.txt')
+json_dict = json.load(open('intermediate/new_file.json'))
+print(json_dict)
+json_dict['name'] = 'Daniel'
+print(json_dict)
