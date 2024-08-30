@@ -15,3 +15,5 @@ json_dict = json.load(open('intermediate/new_file.json'))
 print(json_dict)
 json_dict['name'] = 'Daniel'
 print(json_dict)
+
+

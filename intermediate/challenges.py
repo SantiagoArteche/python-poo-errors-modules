@@ -128,3 +128,4 @@ def filt(n):
 print(list(filter(filt, numbers)))
 
 print(reduce(lambda a, b : a + b, numbers))
+
